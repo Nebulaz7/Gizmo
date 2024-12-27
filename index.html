@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voice to Text</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Gizmo.ai</h1>
+      </div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="home">
+        <h1>Welcome <span>username</span>, let </h1>
+      <button id="startButton">Start Voice Input</button>
+      <button id="clear">Clear</button>
+      <select id="language" onchange="recognition.lang = this.value">
+        <option value="en-US">English</option>
+      </select>
+      <div class="outputSec">
+      <div id="outputText" contenteditable="true"></div>
+      <iframe id="outputImage" src="demo_iframe.htm"></iframe>
+    </div>
+      <button id="generateImg">Generate image</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
